@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleccion</title>
+    <link rel="stylesheet" type="text/css" href="EstiloJuegos.css">
+</head>
+<body>
+    <div>
+        <h1>Elija un juego</h1> 
+        <br />
+        <form id="registroForm">
+
+            <!--<div onclick="ingresarNumero(1)">1</div>
+    <div onclick="ingresarNumero(2)">2</div>
+    <div onclick="ingresarNumero(3)">3</div>
+    <div onclick="ingresarNumero(4)">4</div>
+    <div onclick="ingresarNumero(5)">5</div>-->
+
+            <label for="NroJuegoElegido">Juego:</label>
+            <input type="number" id="NroJuegoElegido" name="NroJuegoElegido" required>
+            <br> <br />
+
+            <label for="NroEquipoVotante">Equipo:</label>
+            <input type="number" id="NroEquipoVotante" name="NroEquipoVotante" required>
+            <br> <br />
+
+
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="IngresarEleccionJuego.js"></script>
+
+    <!--<body>
+        <h1>Elija un juego</h1> <br />
+        <form id="registroForm">
+            <div>
+                <div onclick="ingresarNumero(1)">1</div>
+                <div onclick="ingresarNumero(2)">2</div>
+                <div onclick="ingresarNumero(3)">3</div>
+                <div onclick="ingresarNumero(4)">4</div>
+                <div onclick="ingresarNumero(5)">5</div>
+            </div>
+
+
+            <button class="div" onclick="enviarFormulario()">Enviar</button>
+        </form>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function (event) {
+                console.info("IngresarJuego")
+            });
+
+            document.getElementById('registroForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+                function ingresarNumero(numero) {
+                    return numero;
+                }
+
+                const datos = {
+                    'NroJuegoElegido': ingresarNumero
+                }
+
+                // Enviar los datos a una API REST (sustituye la URL por la de tu API)
+                fetch('http://localhost:5237/Eleccion', {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(datos)
+                })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Bad Request'); // Lanzar un error personalizado si la respuesta no es exitosa (código de estado diferente de 2xx)
+                        }
+                        return response.json(); // Convertir la respuesta a JSON si es exitosa
+                    })
+                    .then(data => {
+                        // Manejar la respuesta de la API aquí
+                        console.log('Respuesta de la API:', data);
+                        alert('Registro exitoso');
+                    })
+                    .catch(error => {
+                        // Manejar errores aquí
+                        console.error('Error al enviar los datos:', error);
+                        alert('Hubo un error al procesar el registro');
+                    });
+            });
+
+                                        </script>
+
+        -->
+</body>
+    </html>

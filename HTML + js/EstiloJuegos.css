@@ -1,0 +1,93 @@
+﻿@import url(https://db.onlinewebfonts.com/c/f1065d0fff2de97c2c7ff72bb019a88e?family=Arcade);
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: "Arcade";
+    background: repeating-linear-gradient(to bottom, #0f0a1e, #0f0a1e 2px, #140e29 2px, #140e29 4px);
+   
+}
+
+div {
+    position: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 80px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe, 4px 0 0 #4405fc;
+    animation: blink 2s steps(15, start) infinite;
+}
+
+button[type="submit"] {
+    width: 120px;
+    height: 40px;
+    color: white;
+    font-size: 25px;
+    background-color: ActiveBorder;
+    border: 2px solid white;
+    border-radius: 10px;
+    letter-spacing: 5px;
+    text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe, 4px 0 0 #4405fc;
+    animation: blink 2s steps(15, start) infinite;
+}
+.a {
+    width: 120px;
+    height: 40px;
+    color: white;
+    font-size: 25px;
+    background-color: ActiveBorder;
+    border: 2px solid white;
+    border-radius: 10px;
+    letter-spacing: 5px;
+    text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe, 4px 0 0 #4405fc;
+    animation: blink 2s steps(15, start) infinite;
+}
+@-moz-keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-o-keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
