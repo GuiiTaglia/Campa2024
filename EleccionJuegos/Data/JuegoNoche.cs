@@ -8,10 +8,9 @@ namespace Data
 {
     public class JuegoNoche
     {
-        public int? NroJuego { get; set; }
+        public int NroJuego { get; set; }
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
         public bool Eliminado { get; set; }
-
     }
 }

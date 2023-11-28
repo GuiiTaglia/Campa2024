@@ -25,7 +25,7 @@ document.getElementById('registroForm').addEventListener('submit', function (eve
     }
 
     // Enviar los datos a una API REST (sustituye la URL por la de tu API)
-    fetch('http://localhost:5237/Eleccion', {
+    fetch('http://localhost:5122/Eleccion', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

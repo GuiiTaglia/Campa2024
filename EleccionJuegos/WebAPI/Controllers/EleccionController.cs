@@ -10,6 +10,7 @@ namespace WebAPI.Controllers
     public class EleccionController : ControllerBase
     {
         public EleccionService administrador = new EleccionService();
+        public VotacionService adm = new VotacionService(); 
 
         [HttpPost]
         public IActionResult AgregarEleccion([FromBody] Eleccion eleccion)
@@ -22,7 +23,20 @@ namespace WebAPI.Controllers
             return BadRequest(resultado);
         }
 
-        
+        //Juegos Votos
+
+        [HttpGet("")]
+        public IActionResult MostrarVotosJuegos()
+        {
+            List<JuegoVotos> listado = adm.JuegosVotacion();
+            if (listado != null)
+            {
+                return Ok(listado);
+            }
+            return BadRequest();
+        }
+
+
 
     }
 }

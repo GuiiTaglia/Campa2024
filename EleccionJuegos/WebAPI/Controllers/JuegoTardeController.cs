@@ -1,13 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Data;
 using Logica;
-using Data;
+using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-
-    public class JuegoController : ControllerBase
+    public class JuegoTardeController : Controller
     {
         public JuegoService administrador = new JuegoService();
 
@@ -34,6 +33,5 @@ namespace WebAPI.Controllers
             return BadRequest();
         }
 
-        
     }
 }

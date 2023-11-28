@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Data;
 using Logica;
-using Data;
+using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers
 {
@@ -10,7 +10,7 @@ namespace WebAPI.Controllers
     public class JuegoNocheController : ControllerBase
     {
         public JuegoService administrador = new JuegoService();
-                
+
         [HttpGet("")]
         public IActionResult MostrarJuegoNoche()
         {

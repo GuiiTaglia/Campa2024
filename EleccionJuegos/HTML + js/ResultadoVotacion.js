@@ -2,16 +2,15 @@
 // Función para llenar la tabla de usuarios
 //document.addEventListener("DOMContentLoaded", 
     function TablaJuegos() {
-        fetch('http://localhost:5237/Juego') // Reemplaza con la URL de tu API
+        fetch('http://localhost:5122/Eleccion') // Reemplaza con la URL de tu API
             .then(response => response.json())
             .then(data => {
                 var tablaJuegos = document.getElementById('listado');
-                data.forEach(Juego => {
+                data.forEach(JuegoVotos => {
                     var fila = document.createElement("tr");
                     fila.innerHTML = `
-                    <td>${Juego.nroJuego}</td> 
-                    <td>${Juego.nombre}</td>
-                    <td>${Juego.descripcion}</td>`;
+                    <td>${JuegoVotos.juegos}</td> 
+                    <td>${JuegoVotos.cantVotos}</td>`;
                     tablaJuegos.appendChild(fila);
                 });
             })

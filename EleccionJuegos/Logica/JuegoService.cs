@@ -26,9 +26,9 @@ namespace Logica
         public List<JuegoTarde> MostrarJuegosTarde()
         {
             List<JuegoTarde> ListadoJuegos = archivo.LeerArchivoJuegoTarde();
-            
+
             List<JuegoTarde> listado = ListadoJuegos.FindAll(n => n.Eliminado == false);
-           
+
             return listado;
         }
 
@@ -49,6 +49,5 @@ namespace Logica
             }
             return Tipo.Noche;
         }*/
-
     }
 }

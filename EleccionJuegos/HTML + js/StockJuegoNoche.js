@@ -2,7 +2,7 @@
 // Función para llenar la tabla de usuarios
 //document.addEventListener("DOMContentLoaded", 
     function TablaJuegos() {
-        fetch('http://localhost:5237/JuegoNoche') // Reemplaza con la URL de tu API
+        fetch('http://localhost:5122/JuegoNoche') // Reemplaza con la URL de tu API
             .then(response => response.json())
             .then(data => {
                 var tablaJuegos = document.getElementById('listado');
